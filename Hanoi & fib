@@ -1,0 +1,15 @@
+def hanoi（n ,source ,target ,helper）:
+  if n < 2:
+    print (source + '->' + target)
+  else:
+    hanoi(n-1 ,source ,helper ,target)
+    print(source + '->' + target)
+    hanoi(n-1 ,helper ,target ,source)
+   
+def fib(limit):
+  n ,a ,b = 0 ,0, 1
+  while n < limit：
+   yield b
+   a ,b = b ,a+b
+   n += 1
+  retrun 'done'
